@@ -61,12 +61,3 @@ class SinglyLinkedList:
             itr = itr.next
             count += 1
 
-if __name__ == "__main__":
-    students = SinglyLinkedList()
-    students.insert_at_beginning("Trung")
-    students.insert_at_beginning("Hung")
-    students.insert_at_end("Dung")
-    students.print()
-
-    students.remove_at(1)
-    students.print()
