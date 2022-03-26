@@ -1,6 +1,3 @@
-from string import whitespace
-
-
 class Node:
     def __init__(self, data, next):
         self.data = data
@@ -24,7 +21,7 @@ class SinglyLinkedList:
         while itr:
             result += str(itr.data) + "-->"
             itr = itr.next
-        print(result)
+        print(result[:-3])
     
     def insert_at_end(self, data):
         if self.head is None:
@@ -45,7 +42,7 @@ class SinglyLinkedList:
             itr = itr.next
         return count
 
-    def remove_at(self, index):
+    def remove_at(self, index: int):
         if index < 0 or index > self.get_length():
             raise("Invalid index")
         
